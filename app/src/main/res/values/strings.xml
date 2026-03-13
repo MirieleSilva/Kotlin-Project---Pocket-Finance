@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pocket Finance</string>
+    <string name="title_login">Controle suas Finanças</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Senha</string>
+    <string name="btn_login">Entrar</string>
+    <string name="btn_go_to_register">Não tem conta? Cadastre-se</string>
+
+    <string name="title_home">Minhas Despesas</string>
+    <string name="btn_add_expense">Nova Despesa</string>
+    <string name="label_description">Descrição (ex: Almoço)</string>
+    <string name="label_value">Valor (R$)</string>
+
+    <string name="current_balance">Saldo Atual</string>
+    <string name="no_spend">Nenhum gasto. Segure para apagar.</string>
+    <string name="btn_add">+ Adicionar Gasto</string>
+    <string name="btn_logout">Sair</string>
+    <string name="confirmar_exclusao">Deseja excluir este gasto?</string>
+</resources>

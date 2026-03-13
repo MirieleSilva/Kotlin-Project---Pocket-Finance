@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "631645612805",
+    "project_id": "pocketfinance-ad44a",
+    "storage_bucket": "pocketfinance-ad44a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631645612805:android:69a55a78983b5a6dd5256c",
+        "android_client_info": {
+          "package_name": "com.app.pocketfinance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj5I4Hq3JYDZeKcPrHyv6n6mHDO8NkP8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
