@@ -17,29 +17,39 @@
         android:textColor="@color/primary_color"
         android:layout_marginBottom="32dp"/>
 
-    <EditText
-        android:id="@+id/editEmail"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerEmail"
+        android:name="com.app.pocketfinance.EmailInputFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_email"
-        android:inputType="textEmailAddress"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="8dp" />
 
-    <EditText
-        android:id="@+id/editPassword"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerPassword"
+        android:name="com.app.pocketfinance.PasswordInputFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="8dp" />
 
-    <Button
-        android:id="@+id/btnLogin"
+    <TextView
+        android:id="@+id/txtForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:textColor="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerButton"
+        android:name="com.app.pocketfinance.ActionButtonFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_login"
-        android:backgroundTint="@color/primary_color"
-        android:textColor="@color/white"/>
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/txtGoToRegister"

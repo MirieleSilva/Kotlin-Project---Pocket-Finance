@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Pocket Finance</string>
-    <string name="title_login">Controle suas Finanças</string>
     <string name="hint_email">E-mail</string>
     <string name="hint_password">Senha</string>
     <string name="btn_login">Entrar</string>
     <string name="btn_go_to_register">Não tem conta? Cadastre-se</string>
+    <string name="forgot_password">Esqueci minha senha</string>
 
     <string name="title_home">Minhas Despesas</string>
     <string name="btn_add_expense">Nova Despesa</string>
@@ -12,8 +12,44 @@
     <string name="label_value">Valor (R$)</string>
 
     <string name="current_balance">Saldo Atual</string>
-    <string name="no_spend">Nenhum gasto. Segure para apagar.</string>
     <string name="btn_add">+ Adicionar Gasto</string>
     <string name="btn_logout">Sair</string>
     <string name="confirmar_exclusao">Deseja excluir este gasto?</string>
+    <string name="title_login">Controle suas Finanças</string>
+
+    <string name="msg_login_success">Login realizado!</string>
+    <string name="msg_error">Erro</string>
+    <string name="msg_fill_fields">Preencha e-mail e senha</string>
+    <string name="msg_recovery_sent">E-mail de recuperação enviado!</string>
+    <string name="msg_enter_email">Digite o e-mail no campo acima</string>
+
+    <string name="title_select_photo">Selecione uma foto</string>
+    <string name="msg_logout_success">Logout realizado</string>
+    <string name="msg_photo_updated">Foto atualizada!</string>
+    <string name="msg_photo_failed">Falha ao subir foto</string>
+    <string name="hint_description">Descrição</string>
+    <string name="hint_value">Valor</string>
+    <string name="btn_save">Salvar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="msg_fill_all_fields">Preencha todos os campos</string>
+    <string name="msg_save_success">Gasto salvo com sucesso!</string>
+    <string name="title_edit_expense">Editar Gasto</string>
+    <string name="btn_view_maps">📍 Ver no Google Maps</string>
+    <string name="btn_update">Atualizar</string>
+    <string name="label_hello">Olá,</string>
+    <string name="label_welcome">Bem-vinda!</string>
+    <string name="btn_finish_register">Finalizar Cadastro</string>
+    <string name="login_success">Sucesso</string>
+    <string name="unknown_location">Local desconhecido</string>
+    <string name="location">Local</string>
+    <string name="full_name">Nome Completo</string>
+    <string name="create_your_account">Crie sua Conta</string>
+    <string name="btn_delete">Excluir</string>
+    <string name="title_delete_confirm">Confirmar Exclusão</string>
+    <string name="msg_delete_confirm">Tem certeza que deseja apagar este gasto?</string>
+    <string name="msg_delete_success">Gasto removido!</string>
+    <string name="btn_yes">Sim</string>
+    <string name="btn_no">Não</string>
+    <string name="msg_no_expenses">Nenhum gasto registrado</string>
+    <string name="label_total">Total</string>
 </resources>

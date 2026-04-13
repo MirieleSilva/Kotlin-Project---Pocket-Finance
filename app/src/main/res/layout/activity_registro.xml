@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crie sua Conta"
+        android:text="@string/create_your_account"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/primary_color"
@@ -21,31 +21,29 @@
         android:id="@+id/editNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome Completo"
+        android:hint="@string/full_name"
         android:inputType="textPersonName"
         android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/editEmailRegistro"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerEmailReg"
+        android:name="com.app.pocketfinance.EmailInputFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_email"
-        android:inputType="textEmailAddress"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="8dp" />
 
-    <EditText
-        android:id="@+id/editPasswordRegistro"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerPasswordReg"
+        android:name="com.app.pocketfinance.PasswordInputFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/btnFinalizarRegistro"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerButtonReg"
+        android:name="com.app.pocketfinance.ActionButtonFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar"
-        android:backgroundTint="@color/primary_color"/>
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>

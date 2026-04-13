@@ -1,11 +1,11 @@
 package com.app.pocketfinance
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
-
 
     private lateinit var auth: FirebaseAuth
 
@@ -13,29 +13,30 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
-
         auth = FirebaseAuth.getInstance()
 
-        val btnFinish = findViewById<android.widget.Button>(R.id.btnFinalizarRegistro)
-        val editEmail = findViewById<android.widget.EditText>(R.id.editEmailRegistro)
-        val editPassword = findViewById<android.widget.EditText>(R.id.editPasswordRegistro)
+        val fragEmail = supportFragmentManager.findFragmentById(R.id.containerEmailReg) as EmailInputFragment
+        val fragPassword = supportFragmentManager.findFragmentById(R.id.containerPasswordReg) as PasswordInputFragment
+        val fragButton = supportFragmentManager.findFragmentById(R.id.containerButtonReg) as ActionButtonFragment
 
-        btnFinish.setOnClickListener {
-            val email = editEmail.text.toString()
-            val password = editPassword.text.toString()
+        fragButton.setButtonText(getString(R.string.btn_finish_register))
+
+        fragButton.setOnClickListener {
+            val email = fragEmail.getEmail()
+            val password = fragPassword.getPassword()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
-                            android.widget.Toast.makeText(this, "Sucesso!", android.widget.Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, (getString(R.string.login_success)), Toast.LENGTH_SHORT).show()
                             finish()
                         } else {
-                            android.widget.Toast.makeText(this, "Erro: ${task.exception?.message}", android.widget.Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "${getString(R.string.msg_error)}: ${task.exception?.message}", Toast.LENGTH_LONG).show()
                         }
                     }
             } else {
-                android.widget.Toast.makeText(this, "Preencha todos os campos", android.widget.Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, (getString(R.string.msg_fill_all_fields)), Toast.LENGTH_SHORT).show()
             }
         }
     }
